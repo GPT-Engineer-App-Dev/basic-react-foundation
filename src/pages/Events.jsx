@@ -30,6 +30,9 @@ const Events = () => {
             <Text mt={4}>{new Date(event.date).toLocaleDateString()}</Text>
             <Text mt={4}>Venue ID: {event.venue_id}</Text>
             <Text mt={4}>{event.is_starred ? "⭐ Starred Event" : ""}</Text>
+            <Text mt={4} color={event.private ? "red.500" : "green.500"}>
+              {event.private ? "Private Event" : "Public Event"}
+            </Text>
           </Box>
         ))}
       </SimpleGrid>
