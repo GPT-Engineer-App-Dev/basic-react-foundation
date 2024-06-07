@@ -27,6 +27,7 @@ const fromSupabase = async (query) => {
 // date: string
 // venue_id: number
 // is_starred: boolean
+// private: boolean
 
 // Table: comments
 // Columns:
